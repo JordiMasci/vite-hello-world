@@ -1,20 +1,18 @@
-<!-- SCRIPT -->
 <script>
+import AppTitle from "./components/AppTitle.vue";
+import AppGallery from "./components/AppGallery.vue";
+
 export default {
-  data() {
-    return {
-      title: "La mia prima app con Vite",
-    };
+  components: {
+    AppTitle: AppTitle,
+    AppGallery: AppGallery,
   },
 };
 </script>
 
-<!-- TEMPLATE -->
 <template>
-  <h1>
-    {{ title }}
-  </h1>
+  <AppTitle />
+  <AppGallery />
 </template>
 
-<!-- STYLE -->
 <style></style>
